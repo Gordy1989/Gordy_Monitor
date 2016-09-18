@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.gordy.ichanosdk.viewer.Ui.WatchActivity">
+    <RelativeLayout
+        android:id="@+id/watch_ly_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#0099FF">
+        <ImageView
+            android:id="@+id/watch_img_back"
+            android:src="@mipmap/back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/watch_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="5dp"/>
+    </RelativeLayout>
+
+    <FrameLayout android:id ="@+id/surface_contain"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+        <com.ichano.rvs.viewer.ui.GLMediaView
+            android:id="@+id/watch_media"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ToggleButton
+                android:id="@+id/watch_btn_sound"
+                android:textOn="关闭声音"
+                android:textOff="开启声音"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_background"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <ToggleButton
+                android:id="@+id/watch_btn_talk"
+                android:textOn="停止对讲"
+                android:textOff="开始对讲"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_background"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <ToggleButton
+                android:id="@+id/watch_btn_record"
+                android:textOn="停止录制"
+                android:textOff="开始录制"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_background"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <Button
+                android:id="@+id/watch_btn_capture"
+                android:text="截图"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_background"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <Button
+                android:id="@+id/watch_btn_cmd"
+                android:text="发送命令"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_background"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

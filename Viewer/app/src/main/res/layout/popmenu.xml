@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#006699"
+    android:id="@+id/ly_Popup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ly_Manual"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_Manual"
+            android:gravity="left"
+            android:text="手动添加"
+            android:textColor="#ffffff"
+            android:drawableLeft="@mipmap/manual"
+            android:drawablePadding="5dp"
+            android:textSize="16sp"
+            android:background="#006699"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="#0099FF"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:id="@+id/ly_QRCode"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_QRCode"
+            android:gravity="left"
+            android:text="二维码添加"
+            android:drawableLeft="@mipmap/code"
+            android:textColor="#ffffff"
+            android:drawablePadding="5dp"
+            android:textSize="16sp"
+            android:background="#006699"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="#0099FF"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:id="@+id/ly_Lan"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_lan"
+            android:gravity="left"
+            android:text="局域网内搜索"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:drawablePadding="5dp"
+            android:background="#006699"
+            android:drawableLeft="@mipmap/lan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
