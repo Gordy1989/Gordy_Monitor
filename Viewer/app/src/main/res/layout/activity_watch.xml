@@ -31,16 +31,36 @@
             android:layout_marginLeft="5dp"/>
     </RelativeLayout>
 
-    <FrameLayout android:id ="@+id/surface_contain"
+    <FrameLayout
+        android:id="@+id/ly_media"
         android:layout_width="match_parent"
         android:layout_margin="15dp"
         android:layout_height="0dp"
         android:layout_weight="1.0">
-        <com.ichano.rvs.viewer.ui.GLMediaView
-            android:id="@+id/watch_media"
+        <RelativeLayout
+            android:id="@+id/ly_snap"
+            android:visibility="gone"
+            android:padding="1dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/img_snap"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="matrix"/>
+        </RelativeLayout>
+        <FrameLayout android:id ="@+id/surface_contain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.ichano.rvs.viewer.ui.GLMediaView
+                android:id="@+id/watch_media"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+
     </FrameLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="250dp">
